@@ -1,0 +1,111 @@
+// :root {
+//     line-height: 1.5;
+//     font-weight: 400;
+//     font-size: 16px;
+//     text-rendering: optimizeLegibility;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+// /////////////////////////////
+// // => Global Fonts
+// @font-face {
+//   font-family: HindGuntur;
+//   src: url(../fonts/HindGuntur-Regular.ttf);
+//   font-weight: 400;
+// }
+// @font-face {
+//   font-family: HindGuntur;
+//   src: url(../fonts/HindGuntur-Medium.ttf);
+//   font-weight: 500;
+// }
+// @font-face {
+//     font-family: Inter;
+//     src: url(../fonts/Inter-Regular.ttf);
+//     font-weight: 400;
+//   }
+// @font-face {
+//     font-family: Inter;
+//     src: url(../fonts/Inter-Medium.ttf);
+//     font-weight: 500;
+// }
+// @font-face {
+//     font-family: Inter;
+//     src: url(../fonts/Inter-SemiBold.ttf);
+//     font-weight: 600;
+// }
+// @font-face {
+//     font-family: Inter;
+//     src: url(../fonts/Inter-Bold.ttf);
+//     font-weight: 700;
+// }
+// html {
+// 	scroll-behavior: smooth;
+// }
+/////////////////////////////
+// => container and media query
+.container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 430px) {
+    .container {
+      max-width: 390px;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+  @media (min-width: 565px) {
+    .container {
+      max-width: 540px;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 920px;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1490px;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  }
+  @media (min-width: 1920px) {
+    .container {
+      max-width: 1805px;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  }
+  /////////////

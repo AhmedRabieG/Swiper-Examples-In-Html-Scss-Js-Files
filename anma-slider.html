@@ -5,41 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anma Slider</title>
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style/main.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
-    
-    <section class="anma-slider">
-        <div class="container">
-            <div>
-                <h1 class="bg-black">
-                    Book from top specialties
-                </h1>
-                <div class="swiper swiper-container__anma">
-                    <div class="swiper-wrapper">
+    <div id="nav-placeholder"></div>
+    <div class="container">
+        <div class="anma-slider">
+            <h1>
+                Book from top specialties
+            </h1>
+            <div class="swiper swiper-container__anma">
+                <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
-                            <dir class="anma-card">
-
-                            </dir>
-
+                    <div class="swiper-slide">
+                        <div class="anma-card">
+                            <img class="anma-card-img" src="./images/anma-slider/anma-slider-img01.jpeg" alt="anma-slider-img">
+                            <img class="anma-card-img anma-card-img-last" src="./images/anma-slider/anma-slider-img-04.jpeg" alt="anma-slider-img">
+                            <p class="anma-card-disc">
+                                Clinical Psychology
+                            </p>
                         </div>
-
-                        <div class="swiper-slide">
-
-                        </div>
-
 
                     </div>
+
+                    <div class="swiper-slide">
+                        <div class="anma-card">
+                            <img class="anma-card-img" src="./images/anma-slider/anma-slider-img-02.jpeg" alt="anma-slider-img">
+                            <img class="anma-card-img anma-card-img-last" src="./images/anma-slider/anma-slider-img-04.jpeg" alt="anma-slider-img">
+                            <p class="anma-card-disc">
+                                Clinical Psychology
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="anma-card">
+                            <img class="anma-card-img" src="./images/anma-slider/anma-slider-img-03.jpeg" alt="anma-slider-img">
+                            <img class="anma-card-img anma-card-img-last" src="./images/anma-slider/anma-slider-img-02.jpeg" alt="anma-slider-img">
+                            <p class="anma-card-disc">
+                                Clinical Psychology
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="anma-card">
+                            <img class="anma-card-img" src="./images/anma-slider/anma-slider-img-04.jpeg" alt="anma-slider-img">
+                            <img class="anma-card-img anma-card-img-last" src="./images/anma-slider/anma-slider-img01.jpeg" alt="anma-slider-img">
+                            <p class="anma-card-disc">
+                                Clinical Psychology
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="anma-card">
+                            <img class="anma-card-img" src="./images/anma-slider/anma-slider-img-03.jpeg" alt="anma-slider-img">
+                            <img class="anma-card-img anma-card-img-last" src="./images/anma-slider/anma-slider-img-02.jpeg" alt="anma-slider-img">
+                            <p class="anma-card-disc">
+                                Clinical Psychology
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="anma-card">
+                            <img class="anma-card-img" src="./images/anma-slider/anma-slider-img-04.jpeg" alt="anma-slider-img">
+                            <img class="anma-card-img anma-card-img-last" src="./images/anma-slider/anma-slider-img-01.jpeg" alt="anma-slider-img">
+                            <p class="anma-card-disc">
+                                Clinical Psychology
+                            </p>
+                        </div>
+
+                    </div>
+
+
                 </div>
+
+                <!-- <div class="swiper-pagination"></div> -->
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
             </div>
         </div>
-    </section>
-
-
+    </div>
 
     <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+    });
+</script>

@@ -1,0 +1,112 @@
+.program-slider-title {
+  padding-top: 49px;
+  padding-bottom: 49px;
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  p {
+    color: #09273b;
+    line-height: 34px;
+    font-size: 25px;
+  }
+}
+.swiper-anma-programs {
+  padding-bottom: 64px;
+
+  .swiper-wrapper {
+    margin-bottom: 24px;
+  }
+}
+.program-card {
+  height: unset;
+  color: white;
+  border-radius: 32px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    .program-card__details {
+      transform: translateY(0);
+    }
+    .program-card__img {
+      transform: scale(1.1) translateY(-40px);
+    }
+    .program-card__details {
+      button {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 0.76;
+    transition: all 0.3s ease-in-out;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-top-right-radius: 32px;
+      border-top-left-radius: 32px;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    background-color: #00a9a9;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin-top: -185px;
+    transform: translateY(75px);
+    transition: all 0.3s ease-in-out;
+
+    h4 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 22px;
+      margin-bottom: 20px;
+      //   margin-bottom: 24px;
+    }
+    button {
+      border: 1px solid white;
+      padding: 14px 20px;
+      border-radius: 30px;
+      font-weight: 500;
+      background-color: transparent;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      //   margin-bottom: 20px;
+    }
+  }
+
+  &__details-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -40px;
+    img {
+      flex-shrink: 0;
+    }
+  }
+}

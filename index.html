@@ -10,12 +10,9 @@
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
+    
+    <div id="nav-placeholder"></div>
 
-    <nav class="nav">
-        <a class="" href="index.html">Home</a>
-        <a class="" href="simple-slider.html">Simple Slider</a>
-        <a class="" href="anma-slider.html">Anma slider</a>
-    </nav>
     <h1 class="title text-6xl text-[red] bg-slate-600">Hello</h1>
 
     <div class="swiper swiper-container__first">
@@ -121,3 +118,11 @@
     <script src="./js/main.js"></script>
 </body>
 </html>
+
+<script>
+fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+    document.getElementById('nav-placeholder').innerHTML = data;
+});
+</script>

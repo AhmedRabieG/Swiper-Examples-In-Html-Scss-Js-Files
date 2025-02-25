@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anma Programs slider</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="container">
+        <div class="program-slider-title">
+            <h1 class="text-center mb-8">Our Services for Schools</h1>
+            <p class="text-center">ANMA offers a package of services aimed at    improving students' learning outcomes and training staff to handle individual differences among learners in kindergartens and primary schools using global evidence-based practices. </p>
+        </div>
+        <div class="swiper swiper-anma-programs">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide h-auto">
+                    <a href="#" class="program-card h-full">
+                        <div class="program-card__img">
+                            <img src="./images/anma-programs-slider/anma-slider2-01.png" alt="anma-slider2" class="w-full h-full rounded-[32px] ">
+                        </div>
+                        <div class="program-card__details px-4 ">
+                            <div class="program-card__details-icon">
+                                <img src="./images/anma-programs-slider/anma-slider-icon-01.svg" alt="anma-slider-icon-01" class="w-[43px] h-[34px]">
+                            </div>
+                            <h4>
+                                Teacher Training Programs
+                            </h4>
+                            <p>
+                                We provide a comprehensive training program package targeting educational staff and teachers.
+                            </p>
+                            <button type="button">
+                                Explore More
+                            </button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#" class="program-card">
+                        <div class="program-card__img">
+                            <img src="./images/anma-programs-slider/anma-slider2-02.png" alt="anma-slider2" class="w-full h-full rounded-[32px] ">
+                        </div>
+                        <div class="program-card__details px-4 !bg-[#2b7a99]">
+                            <div class="program-card__details-icon">
+                                <img src="./images/anma-programs-slider/anma-slider-icon-02.svg" alt="anma-slider-icon-01" class="w-[43px] h-[34px]">
+                            </div>
+                            <h4>
+                                Teacher Training Programs
+                            </h4>
+                            <p>
+                                We provide a comprehensive training program package targeting educational staff and teachers.
+                            </p>
+                            <button type="button">
+                                Explore More
+                            </button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#" class="program-card">
+                        <div class="program-card__img">
+                            <img src="./images/anma-programs-slider/anma-slider2-03.png" alt="anma-slider2" class="w-full h-full rounded-[32px] ">
+                        </div>
+                        <div class="program-card__details px-4 bg-[#2fbbf3]">
+                            <div class="program-card__details-icon">
+                                <img src="./images/anma-programs-slider/anma-slider-icon-03.svg" alt="anma-slider-icon-01" class="w-[43px] h-[34px]">
+                            </div>
+                            <h4>
+                                Teacher Training Programs
+                            </h4>
+                            <p>
+                                We provide a comprehensive training program package targeting educational staff and teachers.
+                            </p>
+                            <button type="button">
+                                Explore More
+                            </button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#" class="program-card">
+                        <div class="program-card__img">
+                            <img src="./images/anma-programs-slider/anma-slider2-04.png" alt="anma-slider2" class="w-full h-full rounded-[32px] ">
+                        </div>
+                        <div class="program-card__details px-4 bg-[#cc3956]">
+                            <div class="program-card__details-icon">
+                                <img src="./images/anma-programs-slider/anma-slider-icon-04.svg" alt="anma-slider-icon-01" class="w-[43px] h-[34px]">
+                            </div>
+                            <h4>
+                                Teacher Training Programs
+                            </h4>
+                            <p>
+                                We provide a comprehensive training program package targeting educational staff and teachers.
+                            </p>
+                            <button type="button">
+                                Explore More
+                            </button>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+
+
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+    });
+</script>

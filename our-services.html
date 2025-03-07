@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="container">
+        <h1 class="text-center p-6 mb-6 text-6xl">Our Services</h1>
+        <div class="swiper ourServices-swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="ourServices-card ourServices-card__first">
+                        <div class="ourServices-card__content">
+                            <h3>Quality Control</h3>
+                            <h3>Quality Control</h3>
+                            <div>
+                                <p>
+                                    Ensures the reliability, security, and performance of your software and digital solutions through comprehensive testing and QA processes.
+                                </p>
+                                <a href="#">
+                                    Discover Services
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="ourServices-card ourServices-card__second">
+                        <div class="ourServices-card__content">
+                            <h3>Quality Control</h3>
+                            <h3>Quality Control</h3>
+                            <div>
+                                <p>
+                                    Ensures the reliability, security, and performance of your software and digital solutions through comprehensive testing and QA processes.
+                                </p>
+                                <a href="#">
+                                    Discover Services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="ourServices-card ourServices-card__third">
+                        <div class="ourServices-card__content">
+                            <h3>Quality Control</h3>
+                            <h3>Quality Control</h3>
+                            <div>
+                                <p>
+                                    Ensures the reliability, security, and performance of your software and digital solutions through comprehensive testing and QA processes.
+                                </p>
+                                <a href="#">
+                                    Discover Services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="ourServices-card ourServices-card__fourth">
+                        <div class="ourServices-card__content">
+                            <h3>Quality Control</h3>
+                            <h3>Quality Control</h3>
+                            <div>
+                                <p>
+                                    Ensures the reliability, security, and performance of your software and digital solutions through comprehensive testing and QA processes.
+                                </p>
+                                <a href="#">
+                                    Discover Services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="ourServices-card ourServices-card__fifth">
+                        <div class="ourServices-card__content">
+                            <h3>Quality Control</h3>
+                            <h3>Quality Control</h3>
+                            <div>
+                                <p>
+                                    Ensures the reliability, security, and performance of your software and digital solutions through comprehensive testing and QA processes.
+                                </p>
+                                <a href="#">
+                                    Discover Services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+    });
+</script>

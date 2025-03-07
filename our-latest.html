@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    
+    <div class="container">
+        <div class="ourLatest-title">
+            <h1>
+                Our Latest
+            </h1>
+            <img src="./images/our-latest/OurLatest-icon.svg" alt="Our Latest icon">
+        </div>
+
+        <div class="swiper ourLatest-swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <a href="#" class="ourLatest-card">
+                        <div class="ourLatest-card__image">
+                            <img src="./images/our-latest/mini-01.jpg" alt="">
+                        </div>
+                        <span>06/02/2025</span>
+                        <div class="ourLatest-card__disc">
+                            <h4>
+                              Future Face Unveils a Bold New Identity: A New Era of Innovation & Excellence
+                            </h4>
+                            <img src="./images/our-latest/our-latest-card-arrow.svg" alt="">
+                        </div>
+                        <p>
+                            Future Face, a leading technology solutions provider, proudly announces its brand transformation, unveiling a fresh new identity that reflects its commitment to innovation, digital excellence, and customer-centric solutions.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#" class="ourLatest-card">
+                        <div class="ourLatest-card__image">
+                            <img src="./images/our-latest/mini-01.jpg" alt="">
+                        </div>
+                        <span>06/02/2025</span>
+                        <div class="ourLatest-card__disc">
+                            <h4>
+                              Future Face Unveils a Bold New Identity: A New Era of Innovation & Excellence
+                            </h4>
+                            <img src="./images/our-latest/our-latest-card-arrow.svg" alt="">
+                        </div>
+                        <p>
+                            Future Face, a leading technology solutions provider, proudly announces its brand transformation, unveiling a fresh new identity that reflects its commitment to innovation, digital excellence, and customer-centric solutions.
+                        </p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="ourLatest-card">
+                        <div class="ourLatest-card__image">
+                            <img src="./images/our-latest/mini-02.jpg" alt="">
+                        </div>
+                        <span>06/02/2025</span>
+                        <div class="ourLatest-card__disc">
+                            <h4>
+                              Future Face Unveils a Bold New Identity: A New Era of Innovation & Excellence
+                            </h4>
+                            <img src="./images/our-latest/our-latest-card-arrow.svg" alt="">
+                        </div>
+                        <p>
+                            Future Face, a leading technology solutions provider, proudly announces its brand transformation, unveiling a fresh new identity that reflects its commitment to innovation, digital excellence, and customer-centric solutions.
+                        </p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="ourLatest-card">
+                        <div class="ourLatest-card__image">
+                            <img src="./images/our-latest/mini-03.jpg" alt="">
+                        </div>
+                        <span>06/02/2025</span>
+                        <div class="ourLatest-card__disc">
+                            <h4>
+                              Future Face Unveils a Bold New Identity: A New Era of Innovation & Excellence
+                            </h4>
+                            <img src="./images/our-latest/our-latest-card-arrow.svg" alt="">
+                        </div>
+                        <p>
+                            Future Face, a leading technology solutions provider, proudly announces its brand transformation, unveiling a fresh new identity that reflects its commitment to innovation, digital excellence, and customer-centric solutions.
+                        </p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="ourLatest-card">
+                        <div class="ourLatest-card__image">
+                            <img src="./images/our-latest/mini-04.jpg" alt="">
+                        </div>
+                        <span>06/02/2025</span>
+                        <div class="ourLatest-card__disc">
+                            <h4>
+                              Future Face Unveils a Bold New Identity: A New Era of Innovation & Excellence
+                            </h4>
+                            <img src="./images/our-latest/our-latest-card-arrow.svg" alt="">
+                        </div>
+                        <p>
+                            Future Face, a leading technology solutions provider, proudly announces its brand transformation, unveiling a fresh new identity that reflects its commitment to innovation, digital excellence, and customer-centric solutions.
+                        </p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="ourLatest-card">
+                        <div class="ourLatest-card__image">
+                            <img src="./images/our-latest/mini-05.jpg" alt="">
+                        </div>
+                        <span>06/02/2025</span>
+                        <div class="ourLatest-card__disc">
+                            <h4>
+                              Future Face Unveils a Bold New Identity: A New Era of Innovation & Excellence
+                            </h4>
+                            <img src="./images/our-latest/our-latest-card-arrow.svg" alt="">
+                        </div>
+                        <p>
+                            Future Face, a leading technology solutions provider, proudly announces its brand transformation, unveiling a fresh new identity that reflects its commitment to innovation, digital excellence, and customer-centric solutions.
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ourLatest-nav">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+    });
+</script>

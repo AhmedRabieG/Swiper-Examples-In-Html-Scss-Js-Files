@@ -1,0 +1,90 @@
+.tdf-hero {
+}
+
+.tdf-hero-swiper {
+  width: 100%;
+  aspect-ratio: 2.599;
+  position: relative;
+  .swiper-wrapper {
+  }
+
+  .tdf-hero-card {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+    &___link {
+    }
+    &__background {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__info {
+      h1 {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        color: #fff;
+      }
+      p {
+        margin-bottom: 40px;
+        color: #fff;
+      }
+      button {
+        padding: 12px 16px;
+        background-color: white;
+        color: #333;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  .tdf-hero-swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    .swiper-pagination-bullet {
+      width: 16px;
+      height: 16px;
+      background-color: #9da4ae;
+      border-radius: 50%;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: #1b8354;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tdf hero</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+
+    <div id="nav-placeholder"></div>
+    <div class="tdf-hero">  
+
+        <div class="swiper tdf-hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="tdf-hero-card">
+                        <a href="#" class="tdf-hero-card__link">
+                            <div class="tdf-hero-card__background">
+                                <img src="./images/tdf-hero/hero-02.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="tdf-hero-card">                     
+                        <div class="tdf-hero-card__background">
+                            <video  autoplay loop muted>
+                                <source src="./images/tdf-hero/winter-2024.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="container">
+                            <div class="tdf-hero-card__info">
+                                <h1 class="" data-swiper-parallax="-300">
+                                    Saudi Winter Events
+                                </h1>
+                                <p class="" data-swiper-parallax="-200">
+                                    Explore the magic of Saudi winter through Riyadh Season, the electrifying beats of MDLBEAST, and the captivating experiences in AlUla!
+                                </p>
+                                <button data-swiper-parallax="-100">Know More !</button>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="tdf-hero-card">
+                        <div class="tdf-hero-card__background">
+                            <img  src="/images/tdf-hero/hero-03.jpg" alt="">
+                        </div>
+                        <div class="container">
+                            <div class="tdf-hero-card__info">
+                                <h1 class="" data-swiper-parallax="-300">
+                                    Saudi Stopover Visa
+                                </h1>
+                                <p class="" data-swiper-parallax="-200">
+                                    Apply for a free stopover visa when you fly Saudia or Flynas and explore Saudi for up to 96 hours on your way to your final destination. 
+                                </p>
+                                <button class="" data-swiper-parallax="-100">Know More !</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tdf-hero-swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+    });
+</script>

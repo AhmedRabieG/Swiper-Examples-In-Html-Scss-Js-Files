@@ -1,0 +1,144 @@
+.ourServices-swiper {
+  padding-bottom: 100px;
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+    width: 110px;
+    height: 350px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .swiper-slide.active {
+    width: 710px !important;
+
+    .ourServices-card {
+      width: 100%;
+      padding: 50px 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .ourServices-card__content {
+        align-items: start;
+        h3:first-of-type {
+          display: block;
+        }
+        h3:nth-of-type(2) {
+          display: none;
+        }
+        div:first-of-type {
+          transform: translateY(0px);
+          opacity: 1;
+          visibility: visible;
+          transition: all 0.25s ease-in-out;
+          transition-delay: 0.25s;
+        }
+      }
+    }
+  }
+  .ourServices-card {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 16px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &__content {
+      //   overflow: hidden;.
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      transition: all 0.3s ease-in-out;
+      transition-delay: 0.25s;
+      position: relative;
+
+      h3:first-of-type {
+        display: none;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #f7f7f7;
+        white-space: nowrap;
+      }
+      h3:nth-of-type(2) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        // transform: translateX(0px) rotate(0deg);
+        font-size: 18px;
+        font-weight: 700;
+        color: #f7f7f7;
+        z-index: 2;
+        white-space: nowrap;
+      }
+      div:first-of-type {
+        position: relative;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(50px);
+
+        p {
+          margin-bottom: 18px;
+          font-size: 16px;
+          line-height: 1.5;
+          color: #f7f7f7;
+        }
+        a {
+          padding: 12px 18px;
+          background-color: #17479e;
+          border-radius: 8px;
+          border: 2px solid #6889c3;
+          color: #f7f7f7;
+          font-weight: 600;
+          width: fit-content;
+        }
+      }
+    }
+
+    &__first {
+      background-image: url(../images/our-services/e-services-banner.jpg);
+    }
+    &__second {
+      background-image: url(../images/our-services/digital-infrastucture-banner.jpg);
+    }
+    &__third {
+      background-image: url(../images/our-services/digital-infrastucture-banner.jpg);
+    }
+    &__fourth {
+      background-image: url(../images/our-services/mobility-solutions-banner.jpg);
+    }
+    &__fifth {
+      background-image: url(../images/our-services/quality-control-banner.jpg);
+    }
+  }
+}
+// animation: fadeInScale 0.5s forwards;
+// @keyframes fadeInScale {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(400px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0px);
+//   }
+// }
+// @keyframes fadeOutScale {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(-400px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0px);
+//   }
+// }

@@ -804,7 +804,7 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 .ourServices-swiper .swiper-slide.active {
-  width: 710px !important;
+  width: calc(100% - 504px) !important;
 }
 .ourServices-swiper .swiper-slide.active .ourServices-card {
   width: 100%;
@@ -818,6 +818,7 @@ nav {
 }
 .ourServices-swiper .swiper-slide.active .ourServices-card .ourServices-card__content h3:first-of-type {
   display: block;
+  animation: fadeOutScale 0.5s forwards;
 }
 .ourServices-swiper .swiper-slide.active .ourServices-card .ourServices-card__content h3:nth-of-type(2) {
   display: none;
@@ -907,6 +908,24 @@ nav {
 }
 .ourServices-swiper .ourServices-card__fifth {
   background-image: url(../images/our-services/quality-control-banner.jpg);
+}
+
+.navigation-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+@keyframes fadeOutScale {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

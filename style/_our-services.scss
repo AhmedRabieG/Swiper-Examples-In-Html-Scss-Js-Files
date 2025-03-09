@@ -9,7 +9,7 @@
   }
 
   .swiper-slide.active {
-    width: 710px !important;
+    width: calc(100% - 504px) !important;
 
     .ourServices-card {
       width: 100%;
@@ -22,6 +22,7 @@
         align-items: start;
         h3:first-of-type {
           display: block;
+          animation: fadeOutScale 0.5s forwards;
         }
         h3:nth-of-type(2) {
           display: none;
@@ -121,24 +122,26 @@
     }
   }
 }
-// animation: fadeInScale 0.5s forwards;
-// @keyframes fadeInScale {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(400px);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0px);
-//   }
-// }
-// @keyframes fadeOutScale {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(-400px);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0px);
-//   }
-// }
+.navigation-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  .swiper-button-next {
+  }
+  .swiper-button-prev {
+  }
+}
+
+@keyframes fadeOutScale {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
